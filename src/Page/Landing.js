@@ -3,24 +3,22 @@ import { Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
 function Landing() {
   return (
-    <div>
-      <Container>
-        <Row className="Row g-0">
-          <Col md={10}>
-            <div>안녕하세요,</div>
-            <div>노력하는 개발자</div>
-            <div>CHALIE NUNA 입니다.</div>
-            <div>
-              React, SCSS, JQuery, Node.js, Express, MongoDB, MySQL, Figma,
-              Photoshop
-            </div>
-          </Col>
-          <Col sm={2}>
-            <Circle />
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <Container>
+      <Row className="Row g-0">
+        <Col md={10}>
+          <div>안녕하세요,</div>
+          <div>노력하는 개발자</div>
+          <div>CHALIE NUNA 입니다.</div>
+          <div>
+            React, SCSS, JQuery, Node.js, Express, MongoDB, MySQL, Figma,
+            Photoshop
+          </div>
+        </Col>
+        <Col sm={2}>
+          <Circle />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

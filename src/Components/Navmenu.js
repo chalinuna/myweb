@@ -4,18 +4,49 @@ import styled from "styled-components";
 import "../Components/Navmenu.scss";
 import MenuSvg from "../assets/menu.svg";
 import Xbutton from "../assets/xButton.svg";
+import { useNavigate } from "react-router-dom";
 
 function Navmenu() {
+  let navigate = useNavigate();
+
   return (
     <div className="top">
       <NavHeader>
         <Row className="Row g-0">
-          <Col xs={2}>CHALI NUNA</Col>
+          <Col
+            onClick={() => {
+              navigate("/");
+            }}
+            xs={2}
+          >
+            CHALI NUNA
+          </Col>
           <Col xs={2}></Col>
           <Col xs={2}></Col>
-          <Col xs={2}>My-Skills</Col>
-          <Col xs={2}>My-Projects</Col>
-          <Col xs={2}>Contact-me</Col>
+          <Col
+            onClick={() => {
+              navigate("/skills");
+            }}
+            xs={2}
+          >
+            My-Skills
+          </Col>
+          <Col
+            onClick={() => {
+              navigate("/projects");
+            }}
+            xs={2}
+          >
+            My-Projects
+          </Col>
+          <Col
+            onClick={() => {
+              navigate("/contact");
+            }}
+            xs={2}
+          >
+            Contact-me
+          </Col>
         </Row>
       </NavHeader>
       <MiniMenu />
@@ -25,7 +56,8 @@ function Navmenu() {
 
 function MiniMenu() {
   const [clicked, setClick] = useState(false);
-  console.log("햄버거 클릭", clicked);
+  let navigate = useNavigate();
+
   return (
     <>
       {clicked ? <ToggleMenu /> : ""}
@@ -53,10 +85,34 @@ function MiniMenu() {
       >
         <img src={Xbutton} alt="Close button" />
         <ul>
-          <li>CHALIE NUNA</li>
-          <li>My-Skills</li>
-          <li>My-Projects</li>
-          <li>Contact-me</li>
+          <li
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            CHALIE NUNA
+          </li>
+          <li
+            onClick={() => {
+              navigate("/skills");
+            }}
+          >
+            My-Skills
+          </li>
+          <li
+            onClick={() => {
+              navigate("/projects");
+            }}
+          >
+            My-Projects
+          </li>
+          <li
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            Contact-me
+          </li>
         </ul>
       </Toogle>
     );
