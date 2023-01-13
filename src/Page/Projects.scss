@@ -1,3 +1,4 @@
+$yellow-font: #ff9900;
 .col {
   position: relative;
 }
@@ -6,4 +7,57 @@
 .img-area {
   width: 600px;
   background-repeat: round;
+  @media (max-width: 650px) {
+    width: 400px;
+  }
+  @media (max-width: 450px) {
+    width: 300px;
+  }
+}
+
+.about-area {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .prj-subject {
+    color: $yellow-font;
+    font-size: 30px;
+    margin-bottom: 3rem;
+    @media (max-width: 1210px) {
+      margin-top: 3rem;
+    }
+  }
+  .prj-link {
+    font-size: 24px;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+
+    span {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  }
+  .prj-skills {
+    font-size: 18px;
+    margin-bottom: 3rem;
+  }
+  .prj-content {
+    border-top: 1px solid gray;
+    padding-top: 2rem;
+  }
+}
+
+.slide {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 773px) {
+  .slide {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }
