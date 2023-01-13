@@ -59,7 +59,7 @@ function Landing() {
                 <div className="github-circle">
                   <div className="circle-1">
                     <span className="github-tag">
-                      <img src={Github} alt="github image" />
+                      <img src={Github} alt="github" />
                       <span>Github</span>
                     </span>
                   </div>
@@ -76,7 +76,7 @@ function Landing() {
                   <div className="github-circle2">
                     <div className="circle-2">
                       <span className="github-tag2">
-                        <img src={Blog} alt="blog image" />
+                        <img src={Blog} alt="blog" />
                         <span>Blog</span>
                       </span>
                     </div>
