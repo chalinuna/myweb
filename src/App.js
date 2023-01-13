@@ -28,8 +28,7 @@ function App() {
 const Background = styled.div`
   width: 100vw;
   height: calc(100vh - 140px);
-  max-width: 1200px;
-  // background-color: black;
+  max-width: 1300px;
   margin: auto;
   display: table;
 

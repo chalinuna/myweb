@@ -1,0 +1,144 @@
+$yellow-font: #ff9900;
+.contact-page {
+  .resum-col {
+    padding-left: 4rem;
+  }
+  .contact-tag {
+    margin-bottom: 4rem;
+  }
+  .resum-list {
+    font-size: 26px;
+    margin-bottom: 1rem;
+    display: flex;
+    color: $yellow-font;
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .profile-col {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+
+    .profile-img {
+      position: relative;
+      border-radius: 50%;
+      background-color: black;
+      border: 1px solid white;
+      width: 300px;
+      height: 300px;
+      margin-bottom: 1rem;
+      background-size: cover;
+    }
+    div {
+      margin-bottom: 0.5rem;
+      font-size: 20px;
+    }
+  }
+
+  .edu,
+  .nano {
+    margin-bottom: 4rem;
+  }
+
+  .edu,
+  .elim,
+  .nano,
+  .certificates {
+    font-size: 20px;
+  }
+
+  .edu,
+  .elim,
+  .nano,
+  .certificates {
+    margin-top: 0.5rem;
+    div {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .date,
+  .link {
+    font-size: 18px;
+    margin-left: 1rem;
+    color: gray;
+  }
+  .link {
+    cursor: pointer;
+  }
+
+  .certificates {
+    margin-bottom: 3rem;
+  }
+
+  .mini-img {
+    display: none;
+  }
+
+  @media (max-width: 551px) {
+    // text-align: center;
+    .contact-tag {
+      font-size: 40px;
+    }
+    span {
+      display: block;
+    }
+    .profile-img {
+      display: none;
+    }
+
+    .mini-img {
+      display: block;
+      border-radius: 50%;
+      border: 1px solid white;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 1rem;
+      background-size: cover;
+    }
+
+    .resum-col {
+      padding: 0 1rem 0 1rem;
+    }
+    .profile-col {
+      padding-bottom: 3rem;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid gray;
+    }
+
+    .resum-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      margin-bottom: 0.5rem;
+    }
+    .edu,
+    .elim,
+    .nano,
+    .certificates {
+      font-size: 16px;
+    }
+    .date,
+    .link {
+      font-size: 12px;
+      margin-left: 0;
+      margin-top: 0.5rem;
+      color: gray;
+    }
+    .edu,
+    .nano {
+      margin-bottom: 2rem;
+    }
+    .certificates {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 281px) {
+  }
+}

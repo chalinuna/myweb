@@ -1,11 +1,12 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import styled from "styled-components";
 import "../Page/Skills.scss";
 
 function Skills() {
   return (
-    <div className="page-top">
-      <Row>
+    <div className="animate__animated animate__fadeIn page-top">
+      <Row className="Row g-0">
         <div className="tag">
           <span>My </span>
           <span>Skills</span>
@@ -21,12 +22,24 @@ function Skills() {
           </div>
         </div>
       </Row>
-      <Row>
-        <Col>
+      <Row className="Row g-0">
+        <Col className="first-col" lg={4} md={4}>
           <div className="skills-subject">
-            <div id="purple-diamond"></div>
-            <div id="yellow-diamond"></div>
             Frontent Skills
+            <Diamond
+              color={"#ae11f9"}
+              top={"-10px"}
+              left={"-41px"}
+              width={"40px"}
+              height={"40px"}
+            />
+            <Diamond
+              color={"#FFC700"}
+              top={"-10px"}
+              left={"-51px"}
+              width={"40px"}
+              height={"40px"}
+            />
           </div>
           <div className="skills-tag">Vanilla Web</div>
           <div className="skills-information">
@@ -38,10 +51,22 @@ function Skills() {
             bootstrap, styled-component ...
           </div>
         </Col>
-        <Col>
+        <Col className="first-col" lg={4} md={4}>
           <div className="skills-subject">
-            <div id="purple-diamond"></div>
-            <div id="yellow-diamond"></div>
+            <Diamond
+              color={"#ae11f9"}
+              top={"-10px"}
+              left={"-41px"}
+              width={"40px"}
+              height={"40px"}
+            />
+            <Diamond
+              color={"#FFC700"}
+              top={"-10px"}
+              left={"-51px"}
+              width={"40px"}
+              height={"40px"}
+            />
             Backend Skills
           </div>
           <div className="skills-tag">Node.js</div>
@@ -51,10 +76,22 @@ function Skills() {
           <div className="skills-tag">Database</div>
           <div className="skills-information">MongoDB, Mongoose, My-Sql</div>
         </Col>
-        <Col>
+        <Col className="first-col" lg={4} md={4}>
           <div className="skills-subject">
-            <div id="purple-diamond"></div>
-            <div id="yellow-diamond"></div>
+            <Diamond
+              color={"#ae11f9"}
+              top={"-10px"}
+              left={"-41px"}
+              width={"40px"}
+              height={"40px"}
+            />
+            <Diamond
+              color={"#FFC700"}
+              top={"-10px"}
+              left={"-51px"}
+              width={"40px"}
+              height={"40px"}
+            />
             Tools
           </div>
           <div className="skills-tag">Design</div>
@@ -62,7 +99,7 @@ function Skills() {
             Figma, Photoshop, ClipStudio, Webflow, Wix
           </div>
           <div className="skills-tag">Develop</div>
-          <div className="skills-information">
+          <div className="skills-information" id="final">
             Netlify, AWS S3, AWS elastic beanstalk, Github
           </div>
         </Col>
@@ -70,5 +107,30 @@ function Skills() {
     </div>
   );
 }
+
+const Diamond = styled.div`
+  position: absolute;
+  top: ${(props) => props.top};
+  left: ${(props) => props.left};
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  background-color: transparent;
+  border: 1px solid ${(props) => props.color};
+  margin: 3px 0 0 30px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  @media (max-width: 994px) {
+    display: none;
+  }
+`;
 
 export default Skills;

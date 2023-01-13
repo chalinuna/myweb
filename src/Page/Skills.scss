@@ -16,7 +16,7 @@ $white-font: white;
   .sentence-area {
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 6rem;
   }
 
   .skills-subject {
@@ -33,25 +33,39 @@ $white-font: white;
     margin-top: 0.8rem;
   }
 
-  #purple-diamond {
-    position: absolute;
-    top: -10px;
-    left: -41px;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: 1px solid #ae11f9;
-    margin: 3px 0 0 30px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+  @media (max-width: 992px) {
+    .first-col {
+      margin: auto;
+    }
+  }
 
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
+  @media (max-width: 500px) {
+    text-align: center;
+
+    .tag {
+      font-size: 8vw;
+      margin-top: 10vh;
+    }
+    .sentence-area {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .skills-subject {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+    .skills-tag {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .skills-information {
+      font-size: 16px;
+      margin-top: 0;
+    }
+
+    #final {
+      margin-bottom: 4rem;
+    }
   }
 }

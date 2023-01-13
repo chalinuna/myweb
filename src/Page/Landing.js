@@ -6,7 +6,7 @@ import Blog from "../assets/blog.svg";
 
 function Landing() {
   return (
-    <div className="animate__animated animate__fadeIn page-top">
+    <div className="animate__animated animate__flipInX page-top">
       <Container>
         <Row className="Row g-0">
           <Col xl={10}>
@@ -59,7 +59,7 @@ function Landing() {
                 <div className="github-circle">
                   <div className="circle-1">
                     <span className="github-tag">
-                      <img src={Github} />
+                      <img src={Github} alt="github image" />
                       <span>Github</span>
                     </span>
                   </div>
@@ -76,7 +76,7 @@ function Landing() {
                   <div className="github-circle2">
                     <div className="circle-2">
                       <span className="github-tag2">
-                        <img src={Blog} />
+                        <img src={Blog} alt="blog image" />
                         <span>Blog</span>
                       </span>
                     </div>
