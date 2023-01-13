@@ -22,12 +22,12 @@ function Contact() {
           <img
             src="https://source.unsplash.com/featured/?cat"
             className="profile-img"
-            alt="profile image"
+            alt="profile"
           />
           <img
             src="https://source.unsplash.com/featured/?cat"
             className="mini-img"
-            alt="mini profile image"
+            alt="mini profile"
           />
           <div>Jo Ain</div>
           <div>1998.11.17 (만 24세)</div>
