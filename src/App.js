@@ -27,9 +27,15 @@ function App() {
 
 const Background = styled.div`
   width: 100vw;
+  height: calc(100vh - 140px);
   max-width: 1200px;
-  background-color: beige;
+  // background-color: black;
   margin: auto;
+  display: table;
+
+  @media (max-width: 413px) {
+    height: calc(100vh - 100px);
+  }
 `;
 
 export default App;

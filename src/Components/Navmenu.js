@@ -19,7 +19,7 @@ function Navmenu() {
             }}
             xs={2}
           >
-            CHALI NUNA
+            CHALIE NUNA
           </Col>
           <Col xs={2}></Col>
           <Col xs={2}></Col>
@@ -74,7 +74,6 @@ function MiniMenu() {
 
   function ToggleMenu() {
     const [Xclicked, setXClick] = useState(false);
-    console.log("x버튼 클릭", Xclicked);
     return (
       <Toogle
         Xclicked={Xclicked}
@@ -128,9 +127,20 @@ const Toogle = styled.div`
   background-color: white;
   z-index: 1;
   text-align: right;
-  padding-right: 4rem;
+  padding-right: 2rem;
   padding-top: 2rem;
   border-left: 1px solid lightgray;
+
+  @keyframes showMenu {
+    0% {
+      transform: translateX(100%); /* 애니메이션이 0%만큼 동작시 */
+    }
+    100% {
+      transform: translateX(0%); /* 애니메이션이 100%만큼 동작시 */
+    }
+  }
+  animation-name: showMenu;
+  animation-duration: 0.5s;
 
   ul {
     margin-top: 2rem;

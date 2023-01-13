@@ -1,0 +1,192 @@
+$yellow-font: #ff9900;
+$white-font: white;
+
+.page-top {
+  display: table-cell;
+  vertical-align: middle;
+
+  .circle-3,
+  .circle-4 {
+    display: none;
+  }
+
+  .container {
+    height: 70%;
+  }
+
+  .skill-tree,
+  div,
+  span {
+    font-weight: bold;
+    line-height: 120%;
+  }
+
+  .intro {
+    margin-top: 5rem;
+    font-size: 80px;
+    color: $white-font;
+  }
+  .yellow-text {
+    color: $yellow-font;
+  }
+
+  .skill-tree {
+    color: $white-font;
+    margin-top: 1rem;
+  }
+  .circle-1 {
+    position: relative;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid $white-font;
+    width: 20vw;
+    height: 20vw;
+    z-index: 3;
+  }
+  .circle-2 {
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid $white-font;
+    width: 20vw;
+    height: 20vw;
+
+    &:hover {
+      z-index: 3;
+      background-color: black;
+    }
+  }
+  .github-tag,
+  .github-tag2 {
+    position: absolute;
+    left: 33%;
+    top: 47%;
+    color: white;
+    display: flex;
+
+    span {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .first-circle {
+    position: relative;
+    cursor: pointer;
+  }
+  .second-circle {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
+  .button-zone {
+    display: none;
+  }
+
+  @media (max-width: 1510px) {
+    .circle-1,
+    .circle-2 {
+      width: 15vw;
+      height: 15vw;
+    }
+    .github-tag,
+    .github-tag2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      top: 45%;
+      left: 28%;
+    }
+  }
+
+  @media (max-width: 1210px) {
+    .circles {
+      display: none;
+    }
+    .button-zone {
+      display: block;
+      button {
+        background-color: black;
+        margin-top: 15px;
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        padding-bottom: 30px;
+      }
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .intro {
+      font-size: 8vw;
+    }
+  }
+
+  @media (max-width: 602px) {
+    .button-zone {
+      display: none;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 8vw;
+      color: $white-font;
+      margin-top: 0px;
+    }
+    .skill-tree {
+      text-align: center;
+      font-size: 1rem;
+    }
+    .circles {
+      display: none;
+    }
+
+    .circle-3,
+    .circle-4 {
+      display: block;
+      cursor: pointer;
+    }
+    .circle-3 {
+      margin: auto;
+      position: relative;
+      border-radius: 100px 100px 0 0;
+      background-color: black;
+      border: 1px solid $white-font;
+      width: 200px;
+      height: 100px;
+
+      span {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        color: $white-font;
+      }
+
+      &:hover {
+        background-color: gray;
+      }
+    }
+    .circle-4 {
+      margin: auto;
+      position: relative;
+      border-radius: 0 0 100px 100px;
+      background-color: black;
+      border: 1px solid $white-font;
+      width: 200px;
+      height: 100px;
+      margin-bottom: 3rem;
+
+      span {
+        position: absolute;
+        top: 25%;
+        left: 37%;
+        color: $white-font;
+      }
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+}
