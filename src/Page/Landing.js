@@ -20,10 +20,7 @@ function Landing() {
             </div>
             <div
               onClick={() =>
-                window.open(
-                  "https://make-somthing.tistory.com/category/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
-                  "_blank"
-                )
+                window.open("https://make-somthing.tistory.com/68", "_blank")
               }
               className="circle-4"
             >
@@ -50,14 +47,14 @@ function Landing() {
           </Col>
           <Col sm={2}>
             <div className="circles">
-              <span
-                onClick={() =>
-                  window.open("https://github.com/chalinuna", "_blank")
-                }
-                className="first-circle"
-              >
+              <span className="first-circle">
                 <div className="github-circle">
-                  <div className="circle-1">
+                  <div
+                    className="circle-1"
+                    onClick={() =>
+                      window.open("https://github.com/chalinuna", "_blank")
+                    }
+                  >
                     <span className="github-tag">
                       <img src={Github} alt="github" />
                       <span>Github</span>
@@ -67,7 +64,7 @@ function Landing() {
                 <span
                   onClick={() =>
                     window.open(
-                      "https://make-somthing.tistory.com/category/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
+                      "https://make-somthing.tistory.com/68",
                       "_blank"
                     )
                   }
