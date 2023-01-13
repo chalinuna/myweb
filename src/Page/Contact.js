@@ -102,7 +102,7 @@ function Contact() {
                 </div>
                 <div>
                   <span>Portfolio(Projects)</span>
-                  <span onClick={() => navigate("/project")} className="link">
+                  <span onClick={() => navigate("/projects")} className="link">
                     LINK
                   </span>
                 </div>
