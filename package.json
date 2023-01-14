@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://lambent-lily-149f31.netlify.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
